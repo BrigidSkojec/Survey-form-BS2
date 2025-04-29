@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <style>
+    body {
+    background-color: #E0C2F1}
+    #submit {
+    background-color: purple
+    }
+    #title {
+    color: purple;
+    font-family: "Ribeye", serif;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="title">If Your Life Had Background 
+Music, Genre Would It Be?</h1>
+    <p id="description">This highly scientific survey will determine what musical genre best captures your everyday energy, from “main character in a coffee shop drama” to “chaotic goblin with a ukulele.” Fill it out and discover what’s been playing behind your decisions all along.</p> 
+    
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label><br>
+      <input size="35" id="name" type="text" placeholder="What name would appear in your Spotify bio?" required>
+      <label id="email-label" for="email">Email:</label><br>
+      <input  size="35" id="email" type="email" placeholder="Enter Email" required>
+      <label id="number-label" for="number">Age:</label><br>
+      <input id="number" type="number" placeholder="Enter Your Age" size="35" min="10" max="105"> 
+        <p>Pick your theme song from this 
+definitely real playlist:</p>
+    <select id="dropdown" name="theme-song">
+      <option value="">--Select Your Theme--</option>
+      <option value="dramatic-orchestra">-“Strings of Anxiety (Allegro Regret)”</option>
+      <option value="bubblegum-chaos">“Pop Goes the Existential Crisis”</option>
+      <option value="sad-cowboy">“Lonely in the Produce Aisle”</option>
+      <option value="techno-haunting">“Ghosted (but make it techno)”</option>
+      <option value="acoustic-shame">“Mild Regrets in G Minor”</option>
+    </select>
+    <p>What’s your current energy level?</p>
+    <label>
+      <input type="radio" name="energy-level" value="option1">Slow motion in a rainstorm
+    </label><br>
+    <label>
+      <input type="radio" name="energy-level" value="option2">Slightly caffeinated but confused
+    </label><br>
+    <label>
+      <input type="radio" name="energy-level" value="option4">Full musical number on a moving train
+    </label><br>
+    <label>
+      <input type="radio" name="energy-level" value="option5">Running on 1% battery and spite
+    </label><br>
+      <label>
+        <input type="radio" name="energy-level" value="option5">Existential tap dance
+    </label>
+     <p>Which scenario fits you best?</p>
+    <label>
+      <input type="radio" name="best-scenario" value="option6">Losing a sock and questioning everything
+    </label><br>
+    <label>
+      <input type="radio" name="best-scenario" value="option7">Staring out a window dramatically
+    </label><br>
+    <label>
+      <input type="radio" name="best-scenario" value="option8">Accidentally starting a cult through charisma
+    </label><br>
+    <label>
+      <input type="radio" name="best-scenario" value="option9">Dancing alone in the kitchen
+    </label><br>
+      <label>
+        <input type="radio" name="best-scenario" value="option10">Delivering a monologue no one asked fore
+    </label>
+    <p>Choose your soundtrack vibe</p>
+    <label>
+      <input type="checkbox" name="choose-soundtrack" value="option11">Lo-fi beats with emotional baggage
+    </label><br>
+    <label>
+      <input type="checkbox" name="choose-soundtrack" value="option12">Over-orchestrated classical chaos
+    </label><br>
+    <label>
+      <input type="checkbox" name="choose-soundtrack" value="option13">90s alt rock with eyeliner energy
+    </label><br>
+    <label>
+      <input type="checkbox" name="choose-soundtrack" value="option14">Sad indie ballad featuring rain
+    </label><br>
+      <label>
+        <input type="checkbox" name="choose-soundtrack" value="option15">Bubblegum pop but with rage
+    </label>
+    <p>If your life were a music video, 
+what would be happening?</p>
+    <textarea  id="musicvideo-comment" rows="6" cols="35" type="text" placeholder="Describe the plot of your imaginary music video. Be as vague or dramatic as your heart demands" required></textarea><br>
+    <button id="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <!-- Footer content -->
+  </footer>
+
+</body>
+</html>
